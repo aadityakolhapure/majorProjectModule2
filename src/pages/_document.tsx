@@ -17,7 +17,7 @@ export default function _Document(props: DocumentProps) {
         <link rel="apple-touch-icon" sizes="167x167" href="/icon-512x512.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/icon-512x512.png" />
 
-        <meta name="description" content="Blinko self-hosted personal note" />
+        <meta name="description" content="Brainwave self-hosted personal note" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-config" content="/icons/browserconfig.xml" />

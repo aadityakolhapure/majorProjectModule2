@@ -92,7 +92,7 @@ export const Sidebar = observer(({ onItemClick }: SidebarProps) => {
       </nav>
 
       {/* Footer or bottom utility space */}
-      <div className="px-4 py-3 border-t border-border">{!base.isSidebarCollapsed && <div className="text-xs text-muted-foreground">© 2025 Your Company</div>}</div>
+      <div className="px-4 py-3 border-t border-border">{!base.isSidebarCollapsed && <div className="text-xs text-muted-foreground">© 2025 Brainwave</div>}</div>
 
       {/* Background Decoration */}
       <div className="halation absolute inset-0 h-[250px] w-[250px] overflow-hidden blur-3xl z-0 pointer-events-none">

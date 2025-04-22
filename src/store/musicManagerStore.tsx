@@ -28,7 +28,8 @@ export class MusicManagerStore implements Store {
     }
     MusicManagerStore.instance = this;
     
-    if (!MusicManagerStore.audioInstance) {
+    // Check if we're in a browser environment before creating the Audio instance
+    if (typeof window !== 'undefined' && !MusicManagerStore.audioInstance) {
       const audio = new Audio();
       this.initAudio(audio);
     }
@@ -204,11 +205,14 @@ export class MusicManagerStore implements Store {
   }
 
   async playTrackByName(trackName: string) {
+    // Check if we're in a browser environment and have an audio element
+    if (typeof window === 'undefined' || !this.audioElement) return;
+    
     const track = this.playlist.find(t => 
       (t.metadata?.trackName || t.file.name) === trackName
     );
     
-    if (!track || !this.audioElement) return;
+    if (!track) return;
     
     this.audioElement.pause();
     this.isPlaying = false;

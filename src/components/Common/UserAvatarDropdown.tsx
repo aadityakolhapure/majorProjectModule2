@@ -31,8 +31,14 @@ export const UserAvatarDropdown = observer(({ onItemClick, collapsed = false }: 
           {user.userInfo.value?.image ? (
             <img src={user.userInfo.value.image} alt="avatar" className={`${collapsed ? 'w-10 h-10' : 'w-8 h-8'} rounded-full object-cover`} />
           ) : (
-            <Image src="/icons/icon-128x128.png" width={30} />
+            <>
+              {/* Light theme logo */}
+              <Image src="/logo-light copy.png" alt="Logo" width={collapsed ? 40 : 30} height={collapsed ? 40 : 30} className="dark:hidden" />
+              {/* Dark theme logo */}
+              <Image src="/logo-dark copy.png" alt="Logo" width={collapsed ? 40 : 30} height={collapsed ? 40 : 30} className="hidden dark:block" />
+            </>
           )}
+
           {!collapsed && <span className="font-bold">{user.nickname || user.name}</span>}
         </div>
       </DropdownTrigger>
@@ -43,7 +49,7 @@ export const UserAvatarDropdown = observer(({ onItemClick, collapsed = false }: 
             .map((i) => (
               <DropdownItem
                 key={i.title}
-                className='font-bold'
+                className="font-bold"
                 startContent={<Icon icon={i.icon} width="20" height="20" />}
                 onPress={() => {
                   router.push(i.href);

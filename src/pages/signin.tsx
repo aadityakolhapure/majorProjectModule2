@@ -145,7 +145,7 @@ export default function Component() {
           {/* Title */}
           <p className="text-xl font-medium text-center flex gap-2 items-center justify-center pb-2">
             Login With <span className="text-violet-400">BRAINWAVE</span>
-            {/* Optional Logo */}
+            <Image ></Image>
           </p>
 
           {/* OAuth Buttons */}

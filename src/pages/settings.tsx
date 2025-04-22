@@ -94,14 +94,15 @@ export const allSettings: SettingItem[] = [
     requireAdmin: true,
     keywords: ['storage', 'database', '存储', '数据库'],
   },
-  {
-    key: 'music',
-    title: ('music-settings'),
-    icon: 'tabler:music',
-    component: <MusicSetting />,
-    requireAdmin: true,
-    keywords: ['music', '音乐设置'],
-  },
+  // {
+  //   key: 'music',
+  //   title: ('music-settings'),
+  //   icon: 'tabler:music',
+  //   component: <MusicSetting />,
+  //   requireAdmin: true,
+  //   keywords: ['music', '音乐设置'],
+  // },
+  
   {
     key: 'import',
     title: ('import'),

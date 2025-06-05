@@ -28,7 +28,7 @@
     "build:analyze": "set ANALYZE=true & next build",
     "build:debug": "set DEBUG=* & next build",
     "build:max": "set NODE_OPTIONS=--max-old-space-size=16384 & set DEBUG=* & next build",
-    "start": "prisma migrate & prisma db seed & next start -p 1111",
+    "start": "prisma migrate & prisma db seed & next start -p $PORT",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build",
     "postinstall": "pnpm generate",

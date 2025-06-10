@@ -74,7 +74,7 @@ importers:
         version: 3.7.0
       '@langchain/community':
         specifier: ^0.3.6
-        version: 0.3.32(uszihmggt7uutbctexxo77tfda)
+        version: 0.3.32(b612ca0664740ae1c5cd2093a1f1f587)
       '@langchain/core':
         specifier: ^0.3.40
         version: 0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
@@ -369,9 +369,6 @@ importers:
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
-      sqlite3:
-        specifier: 5.1.7
-        version: 5.1.7
       superjson:
         specifier: ^2.2.1
         version: 2.2.2
@@ -3014,7 +3011,6 @@ packages:
 
   '@libsql/linux-arm64-musl@0.5.3':
     resolution: {integrity: sha512-sv19UXkNo+J6lGSfv4tKjViqciU5MHdtcmaiyJ5BcsEouwDLp5gDbyr1iJHoQw+nWpsiNp1OO4x8JoqC6sZHkA==}
-    cpu: [arm64]
     os: [linux]
 
   '@libsql/linux-x64-gnu@0.4.7':
@@ -16154,7 +16150,7 @@ snapshots:
 
   '@js-sdsl/ordered-map@4.4.2': {}
 
-  '@langchain/community@0.3.32(uszihmggt7uutbctexxo77tfda)':
+  '@langchain/community@0.3.32(b612ca0664740ae1c5cd2093a1f1f587)':
     dependencies:
       '@browserbasehq/stagehand': 1.13.0(@playwright/test@1.50.1)(deepmerge@4.3.1)(dotenv@16.4.7)(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(zod@3.24.2)
       '@ibm-cloud/watsonx-ai': 1.5.0(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))
@@ -20923,12 +20919,14 @@ snapshots:
   bindings@1.5.0:
     dependencies:
       file-uri-to-path: 1.0.0
+    optional: true
 
   bl@4.1.0:
     dependencies:
       buffer: 5.7.1
       inherits: 2.0.4
       readable-stream: 3.6.2
+    optional: true
 
   bluebird@3.4.7: {}
 
@@ -20989,6 +20987,7 @@ snapshots:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
+    optional: true
 
   buffer@6.0.3:
     dependencies:
@@ -21179,7 +21178,8 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  chownr@1.1.4: {}
+  chownr@1.1.4:
+    optional: true
 
   chownr@2.0.0: {}
 
@@ -21881,6 +21881,7 @@ snapshots:
   decompress-response@6.0.0:
     dependencies:
       mimic-response: 3.1.0
+    optional: true
 
   deep-eql@5.0.2: {}
 
@@ -22322,7 +22323,8 @@ snapshots:
       strip-final-newline: 4.0.0
       yoctocolors: 2.1.1
 
-  expand-template@2.0.3: {}
+  expand-template@2.0.3:
+    optional: true
 
   expect-type@1.1.0: {}
 
@@ -22435,7 +22437,8 @@ snapshots:
       token-types: 6.0.0
       uint8array-extras: 1.4.0
 
-  file-uri-to-path@1.0.0: {}
+  file-uri-to-path@1.0.0:
+    optional: true
 
   filelist@1.0.4:
     dependencies:
@@ -22569,7 +22572,8 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 2.3.8
 
-  fs-constants@1.0.0: {}
+  fs-constants@1.0.0:
+    optional: true
 
   fs-extra@11.3.0:
     dependencies:
@@ -22726,7 +22730,8 @@ snapshots:
       through2: 2.0.5
       traverse: 0.6.8
 
-  github-from-package@0.0.0: {}
+  github-from-package@0.0.0:
+    optional: true
 
   glob-parent@5.1.2:
     dependencies:
@@ -24646,7 +24651,8 @@ snapshots:
   mimic-response@2.1.0:
     optional: true
 
-  mimic-response@3.1.0: {}
+  mimic-response@3.1.0:
+    optional: true
 
   minim@0.23.8:
     dependencies:
@@ -24719,7 +24725,8 @@ snapshots:
       minipass: 7.1.2
       rimraf: 5.0.10
 
-  mkdirp-classic@0.5.3: {}
+  mkdirp-classic@0.5.3:
+    optional: true
 
   mkdirp@1.0.4: {}
 
@@ -24818,7 +24825,8 @@ snapshots:
 
   nanoid@3.3.8: {}
 
-  napi-build-utils@2.0.0: {}
+  napi-build-utils@2.0.0:
+    optional: true
 
   ncp@2.0.0: {}
 
@@ -24921,10 +24929,12 @@ snapshots:
   node-abi@3.74.0:
     dependencies:
       semver: 7.7.1
+    optional: true
 
   node-abort-controller@3.1.1: {}
 
-  node-addon-api@7.1.1: {}
+  node-addon-api@7.1.1:
+    optional: true
 
   node-addon-api@8.3.1: {}
 
@@ -25890,6 +25900,7 @@ snapshots:
       simple-get: 4.0.1
       tar-fs: 2.1.2
       tunnel-agent: 0.6.0
+    optional: true
 
   pretty-bytes@5.6.0: {}
 
@@ -26926,7 +26937,8 @@ snapshots:
       figures: 2.0.0
       pkg-conf: 2.1.0
 
-  simple-concat@1.0.1: {}
+  simple-concat@1.0.1:
+    optional: true
 
   simple-get@3.1.1:
     dependencies:
@@ -26940,6 +26952,7 @@ snapshots:
       decompress-response: 6.0.0
       once: 1.4.0
       simple-concat: 1.0.1
+    optional: true
 
   simple-invariant@2.0.1: {}
 
@@ -27071,6 +27084,7 @@ snapshots:
     transitivePeerDependencies:
       - bluebird
       - supports-color
+    optional: true
 
   ssri@8.0.1:
     dependencies:
@@ -27429,6 +27443,7 @@ snapshots:
       mkdirp-classic: 0.5.3
       pump: 3.0.2
       tar-stream: 2.2.0
+    optional: true
 
   tar-stream@2.2.0:
     dependencies:
@@ -27437,6 +27452,7 @@ snapshots:
       fs-constants: 1.0.0
       inherits: 2.0.4
       readable-stream: 3.6.2
+    optional: true
 
   tar-stream@3.1.7:
     dependencies:
@@ -27664,6 +27680,7 @@ snapshots:
   tunnel-agent@0.6.0:
     dependencies:
       safe-buffer: 5.2.1
+    optional: true
 
   type-fest@0.16.0: {}
 
